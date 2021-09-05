@@ -1,0 +1,25 @@
+### Create a new user, success
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "hello@hello.com",
+    "password": "password1"
+}
+
+### Create a new user, error password
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "hello@hello.com"
+}
+
+### Create a new user, error email
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "hellohello.com",
+    "password": "password1"
+}
